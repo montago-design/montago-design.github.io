@@ -1508,9 +1508,10 @@
 
         ._3DxPfO {
             fill: #fff;
-            height: 1.8em;
+            height: 3.8em;
             width: auto;
-            max-width: 1.5em
+            max-width: 1.5em;
+            font-size: 20px;
         }
 
         .js-focus-visible ._17YDwd:focus.focus-visible {
@@ -3652,8 +3653,8 @@
         }
 
         ._11pkob2 {
-            -webkit-animation: _2C7DpW 3s alternate;
-            animation: _2C7DpW 3s alternate;
+            -webkit-animation: _2C7DpW 5s alternate;
+            animation: _2C7DpW 5s alternate;
         }
 
 
@@ -10293,29 +10294,49 @@
                 font-size: 36px;
             }
         }
+        @-webkit-keyframes _3Q0kua {
+            0% {
+                -webkit-transform: translateY(25%);
+                transform: translateY(25%);
+                opacity: 0
+            }
+            50% {
+                opacity: 1
+            }
+            to {
+                -webkit-transform: translateY(-25%);
+                transform: translateY(-25%);
+                opacity: 0
+            }
+        }
 
+        @keyframes _3Q0kua {
+            0% {
+                -webkit-transform: translateY(25%);
+                transform: translateY(25%);
+                opacity: 0
+            }
+            50% {
+                opacity: 1
+            }
+            to {
+                -webkit-transform: translateY(-25%);
+                transform: translateY(-25%);
+                opacity: 0
+            }
+        }
+
+        ._3bAxQ5 {
+            opacity: 1;
+            -webkit-animation: _3Q0kua 4s ease-in-out infinite;
+            animation: _3Q0kua 4s ease-in-out infinite
+        }
     </style>
 </head>
 <body>
 <div id="main" class="main bia_content">
     <header role="banner" class="_2WEdPG HTNWmL _2LPCCu _2ra1kB bia-is-sticky _2RmJHa" id="header">
-        <div id="hc" class="_1cw_SL" style="transform: translate3d(0px, 0px, 0px);">
-            <div class="_hexy3">
-                <button class="_2aT659 _2lep-4" type="button">
-                    <svg class="_2KScOi" viewBox="0 0 22 22">
-                        <g fill="none">
-                            <circle cx="11" cy="11" r="3" stroke="currentColor" stroke-width="2"></circle>
-                        </g>
-                    </svg>
-                    <span class="eYUDqF">Skip to main content</span></button>
-                <button class="_2aT659 _2lep-4" type="button">
-                    <svg class="_2KScOi" viewBox="0 0 22 22">
-                        <g fill="none">
-                            <circle cx="11" cy="11" r="3" stroke="currentColor" stroke-width="2"></circle>
-                        </g>
-                    </svg>
-                    <span class="eYUDqF">Skip to footer</span></button>
-            </div>
+        <div id="hc" class="_1cw_SL">
             <div class="oJib49">
                 <div class="_1-mtFd">
                     <a href="https://www.facebook.com/montago.design">
@@ -10357,7 +10378,7 @@
                         </button>
                     </a>
                 </div>
-                <a class="lUrIZz" title="To the homepage" href="http://localhost:63342/md-landing/MDesign.html">
+                <a class="lUrIZz" title="To the homepage" href="https://montago-design.github.io/">
                     <svg class="_3wjc4D" viewBox="0 0 500 61" role="img" aria-labelledby="logoTitle"><title
                             id="logoTitle">Logo Montago</title>
                         <g>
@@ -10726,35 +10747,24 @@
                 }
 
                 function aro2() {
-                    if (document.getElementById("s2").classList.contains("accordion__item_open")) {
+                    if (document.getElementById("s2").classList.contains("accordion__item_open"))
                         document.getElementById("s2").classList.remove("accordion__item_open");
-                    } else {
-                        document.getElementById("s2").classList.add("accordion__item_open");
-                    }
+                    else document.getElementById("s2").classList.add("accordion__item_open");
                 }
 
                 function aro3() {
-                    if (document.getElementById("s3").classList.contains("accordion__item_open")) {
+                    if (document.getElementById("s3").classList.contains("accordion__item_open"))
                         document.getElementById("s3").classList.remove("accordion__item_open");
-                    } else {
-                        document.getElementById("s3").classList.add("accordion__item_open");
-                    }
+                    else document.getElementById("s3").classList.add("accordion__item_open");
                 }
 
                 function aro4() {
-                    if (document.getElementById("s4").classList.contains("accordion__item_open")) {
+                    if (document.getElementById("s4").classList.contains("accordion__item_open"))
                         document.getElementById("s4").classList.remove("accordion__item_open")
-                    } else {
-                        document.getElementById("s4").classList.add("accordion__item_open")
-                    }
+                    else document.getElementById("s4").classList.add("accordion__item_open")
                 }
 
-                function sc() {
-                    window.scrollTo({
-                        top: 0,
-                        behavior: "smooth"
-                    });
-                }
+                function sc() {window.scrollTo({top: 0, behavior: "smooth"});}
             </script>
         </div>
         <div class="" style="background-color: rgba(0,0,0,1); color: rgb(255, 255, 255);">
@@ -10969,7 +10979,7 @@
             <div class="_3CX8Db"></div>
             <div class="_2BxCUU"></div>
         </div>
-        <div class="BzRHT8">
+        <div class="BzRHT8 _3bAxQ5">
             <button class="" id="st" style="margin: auto;">
                 <svg class="_3DxPfO" viewBox="0 0 28 28">
                     <path fill-rule="evenodd" clip-rule="evenodd"
