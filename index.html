@@ -26,6 +26,7 @@
             transition: 1s;
             pointer-events: none;
         }
+
         ._3CX8Db {
             position: absolute;
             z-index: -1;
@@ -8471,6 +8472,32 @@
                 flex: 0 0 16.6666666667%;
                 max-width: 16.6666666667%
             }
+
+            .order-lg-1 {
+                order: 1
+            }
+
+            .order-lg-4 {
+                order: 4
+            }
+        }
+
+        .footer__copyright {
+            padding-top: 2.5rem;
+            text-align: center
+        }
+
+        @media (min-width: 768px) {
+            .footer__copyright {
+                padding-top: 3.75rem
+            }
+        }
+
+        @media (min-width: 992px) {
+            .footer__copyright {
+                padding-top: 0;
+                text-align: left
+            }
         }
 
         @media (min-width: 1200px) {
@@ -8620,12 +8647,6 @@
             .algorithm__item-text {
                 padding: 30px .625rem 0;
                 text-align: center
-            }
-        }
-
-        @media (min-width: 640px) {
-            .accordion {
-                padding-bottom: 10%;
             }
         }
 
@@ -10101,6 +10122,90 @@
             height: 13px;
             content: url('images/like.svg');
         }
+
+        .footer {
+            padding-bottom: 2.5rem;
+            font-size: .875rem;
+            text-transform: uppercase;
+            text-align: center
+        }
+
+        @media (min-width: 768px) {
+            .footer {
+                padding-bottom: 3.75rem;
+                text-align: left
+            }
+        }
+
+        .footer__sep {
+            margin-bottom: 2.5rem;
+            height: 1px;
+            background: #fff
+        }
+
+        @media (min-width: 768px) {
+            .footer__sep {
+                margin-bottom: 3.75rem
+            }
+        }
+
+        .footer__links-list {
+            margin-bottom: 1.875rem
+        }
+
+        @media (min-width: 768px) {
+            .footer__links-list {
+                margin-bottom: 0
+            }
+        }
+
+        .footer__links-list li {
+            margin-bottom: .625rem
+        }
+
+        .footer__links-list li:last-child {
+            margin-bottom: 0
+        }
+
+        .footer__links-list a {
+            color: #fff
+        }
+
+        .footer__links-list a:hover {
+            color: #bebebe
+        }
+
+        .footer__links-list span:not([class^="icomoon-icon-"]) {
+            color: #bebebe
+        }
+
+        .footer__links-list [class^="icomoon-icon-"] {
+            font-size: .75rem
+        }
+
+        @media (min-width: 768px) {
+            .footer__order-btn {
+                margin-top: 1.25rem
+            }
+        }
+
+        .footer__copyright {
+            padding-top: 2.5rem;
+            text-align: center
+        }
+
+        @media (min-width: 768px) {
+            .footer__copyright {
+                padding-top: 3.75rem
+            }
+        }
+
+        @media (min-width: 992px) {
+            .footer__copyright {
+                padding-top: 0;
+                text-align: left
+            }
+        }
     </style>
 </head>
 <body>
@@ -10180,8 +10285,8 @@
                                   d="M12.892 13.745s.427.038.656-.247l.448-.563c.216-.28.738-.458 1.249-.174.676.382 1.55.982 2.149 1.541.33.278.407.688.182 1.121l-.002.009c-.232.408-.541.791-.932 1.148l-.009.006c-.44.367-.946.58-1.487.404l-.01-.014c-.972-.275-3.304-1.464-4.79-2.649-2.431-1.918-4.159-5.082-4.637-6.778l-.015-.01c-.176-.543.039-1.049.404-1.488l.007-.008c.357-.391.739-.701 1.148-.932l.009-.002c.432-.225.842-.149 1.121.182.367.379 1.056 1.291 1.54 2.149.284.51.106 1.033-.173 1.248l-.564.448c-.284.23-.247.657-.247.657s.834 3.156 3.953 3.952zm4.907-2.616c-.167 0-.303-.135-.304-.302-.014-1.83-.564-3.288-1.634-4.332-1.072-1.045-2.427-1.581-4.027-1.592-.168-.001-.303-.138-.301-.306.001-.167.136-.301.303-.301h.002c1.762.012 3.258.606 4.447 1.764 1.19 1.162 1.802 2.765 1.817 4.763.001.167-.133.304-.301.306h-.002zm-1.595-.624h-.007c-.168-.004-.301-.143-.297-.31.024-1.038-.273-1.878-.906-2.569-.63-.689-1.495-1.065-2.645-1.149-.167-.013-.293-.158-.281-.325.013-.167.158-.293.325-.281 1.294.095 2.32.548 3.049 1.345.733.8 1.092 1.807 1.065 2.992-.004.165-.139.297-.303.297zm-1.558-.522c-.161 0-.295-.126-.303-.289-.051-1.03-.537-1.534-1.527-1.588-.168-.009-.296-.152-.287-.319.009-.168.151-.296.319-.287 1.308.07 2.034.819 2.101 2.164.009.167-.12.31-.288.318l-.015.001zm6.817 3.469c-.605 4.877-4.172 5.185-4.83 5.396-.28.09-2.882.737-6.152.524 0 0-2.438 2.94-3.199 3.705-.119.119-.258.167-.352.145-.131-.032-.167-.188-.165-.414l.02-4.016v-.001c-4.762-1.323-4.485-6.295-4.431-8.898.054-2.603.543-4.736 1.996-6.17 2.61-2.364 7.987-2.011 7.987-2.011 4.541.02 6.717 1.387 7.222 1.845 1.675 1.434 2.528 4.867 1.904 9.895zm-.652-11.113c-.597-.548-3.007-2.298-8.375-2.322 0 0-6.33-.382-9.416 2.45-1.718 1.718-2.322 4.231-2.386 7.348-.063 3.118-.146 8.958 5.484 10.542l.006.002-.004 2.416s-.035.979.609 1.179c.779.241 1.236-.502 1.981-1.304.408-.44.971-1.086 1.397-1.58 3.851.322 6.812-.417 7.149-.526.777-.253 5.177-.816 5.893-6.657.738-6.022-.358-9.83-2.338-11.548z"/>
                         </svg>
                     </button>
-                </a> <a href="tel:380680636810">
-                    <button type="button" class="_3HAZxw _3dPtp" aria-label="Facebook link" title="tel:380680636810">
+                </a> <a href="tel:+380680636810">
+                    <button type="button" class="_3HAZxw _3dPtp" aria-label="Facebook link" title="tel:+380680636810">
                         <svg class="_31zgni _2o5ujw" viewBox="0 0 24 24">
                             <path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"/>
                         </svg>
@@ -10218,11 +10323,12 @@
                 <div class="_3SkoF_">
                     <div class="f_WNzv">
                         <div class="_1GWVjt">
-                            <div><h2 class="_3gGYe-" aria-label="Welcome to the world of Montago Design" role="text"
-                                     style="font-family: SangbleuSans; font-weight: 400; font-style: normal;"><span
-                                    class="_11pkob2">Welcome</span> <span class="_11pkob2">to</span> <span
-                                    class="_11pkob2">the</span> <span class="_11pkob2">world</span> <span
-                                    class="_11pkob2">of</span> <span class="_11pkob2">Montago Design</span></h2></div>
+                            <div>
+                                <h2 class="_3gGYe-" aria-label="Montago Design" role="text"
+                                    style="font-family: SangbleuSans; font-weight: 400; font-style: normal;">
+                                    <span class="_11pkob2">Montago Design</span>
+                                </h2>
+                            </div>
                         </div>
                         <div class="_22oOWg CVcz0G" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
                             <div class="_2_8ttU _11pkob3">Kyiv Interior Design Studio</div>
@@ -10236,37 +10342,7 @@
             <div class="_3CX8Db"></div>
             <div class="_2BxCUU"></div>
         </div>
-        <div class="_2NBi_i vpsFw5 _3XlXEx UPOOYa" style="background-color: #000;">
-            <div class="_2Zp1VA _2gPmWR _3XlXEx JXdGYe">
-                <div class="_1BcrMq">
-                    <div class="AypEyg insta_img_parent_ext_el">
-                        <div class="_2aeIKF"></div>
-                        <img class="_1ge03b _2fl7fw" src="images/3.jpg" data-insta_upload_ext_elem="1">
-                        <div class="insta_img_icon_wrap_ext_el" title="" style="top: 15px; left: 15px;">
-                            <div class="insta_img_icon_ext_el"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="_1OcNPB"></div>
-            </div>
-            <div class="_1nm3QC_2 JXdGYe S8E_sD">
-                <div class="_3SkoF_">
-                    <div class="f_WNzv">
-                        <div class="_1GWVjt">
-                            <div style="color: rgb(255, 255, 255);"> We incarnate your desire through our precise view
-                                to deliver a unique design.
-                            </div>
-                        </div>
-                        <div class="_22oOWg CVcz0G"
-                             style="opacity: 1; transform: translate3d(0px, 0px, 0px);text-align: center;">
-                            <div class="_2_8ttU" style="color: #bebebe;">About Us</div>
-                            <div class="_1T3g7A"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="background-color: #181818; height: auto;">
+        <div style="background-color: rgba(0,0,0,1);color: rgb(255, 255, 255); height: auto;">
             <div class="_1nm3QC _17Eg-h _3_OQIt">
                 <div class="_3SkoF_">
                     <div class="f_WNzv">
@@ -10276,10 +10352,6 @@
             </div>
             <div class="container">
                 <div class="page__section">
-                    <div class="page__section-title-wrap" style="color: rgb(255, 255, 255);">
-                        <div class="page__section-title">Cooperation and delivery steps:</div>
-                        <div class="page__section-subtitle">* Personally flow is adjustable</div>
-                    </div>
                     <div class="algorithm">
                         <div class="algorithm__items-wrap">
                             <div class="algorithm__item">
@@ -10318,7 +10390,6 @@
                 </div>
                 <ul class="accordion services-page__accordion list-unstyled">
                     <li id="s-" class="accordion__item accordion__item_open">
-                        <div class="page__section-title" style="color: rgb(255, 255, 255);">Services</div>
                         <div class="accordion__item-descr">
                             <ul class="accordion list-unstyled">
                                 <li id="s2" class="accordion__item">
@@ -10398,7 +10469,7 @@
                                 <li id="s4" class="accordion__item">
                                     <div class="accordion__item-title accordion__item-title_arrow_left">
                                         <div class="accordion__price-title">
-                                            <div>Entire Project Implementation</div>
+                                            <div>Full project</div>
                                         </div>
                                     </div>
                                     <div class="accordion__item-descr"><p style="color: rgb(255, 255, 255);">We deliver
@@ -10451,6 +10522,9 @@
                         </div>
                     </li>
                 </ul>
+                <div class="_1nm3QC _17Eg-h _3_OQIt" style="padding-bottom: .94444vw;">
+                    <div class="_3SkoF_"></div>
+                </div>
             </div>
             <script> window.onload = init;
 
@@ -10483,191 +10557,6 @@
                 window.scrollTo({top: 0, behavior: "smooth"});
             }
             </script>
-        </div>
-        <div style="background-color: rgba(0,0,0,1); color: rgb(255, 255, 255);">
-            <div class="_1nm3QC _17Eg-h _3_OQIt">
-                <div class="_3SkoF_">
-                    <div class="f_WNzv">
-                        <div class="_2_8ttU" style="color: #bebebe;">Pricing</div>
-                    </div>
-                </div>
-            </div>
-            <div class="column _1nm3QC _17Eg-h _3_OQIt" style="display: inline-block;padding-bottom: 15%;">
-                <div class="_3SkoF_">
-                    <div class="f_WNzv">
-                        <div class="_1GWVjt">
-                            <div><h2 class="p_h" aria-label="The Extra O collection is now available!" role="text"
-                                     style="font-family: SangbleuSans; font-weight: 100; font-style: normal;color: #bebebe;">
-                                <span class="_1JTSiQ _2JC1Dv"
-                                      style="opacity: 1; transform: translate3d(0px, 0px, 0px);">Design</span> <span
-                                    class="_1JTSiQ _2JC1Dv" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">Project</span>
-                            </h2></div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"><h2 class="p_h" aria-label="The Extra O collection is now available!"
-                                                    role="text"
-                                                    style="font-family: SangbleuSans; font-weight: 100; font-style: normal;">
-                                <span class="_1JTSiQ _2JC1Dv">25 $/м²</span></h2></div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"></div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"><span class="_3YaNEc"
-                                                      style="color: #bebebe;">Design concept development</span></div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"><span class="_3YaNEc"
-                                                      style="color: #bebebe;">Technical documentation</span></div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"><span class="_3YaNEc" style="color: #bebebe;">3D visualization</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"><span class="_3YaNEc"></span></div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"><span class="_3YaNEc"></span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column _1nm3QC _17Eg-h _3_OQIt" style="display: inline-block;padding-bottom: 15%;">
-                <div class="_3SkoF_">
-                    <div class="f_WNzv">
-                        <div class="_1GWVjt">
-                            <div><h2 class="p_h" aria-label="The Extra O collection is now available!" role="text"
-                                     style="font-family: SangbleuSans; font-weight: 300; font-style: normal;color: #bebebe;">
-                                <span class="_1JTSiQ _2JC1Dv"
-                                      style="opacity: 1; transform: translate3d(0px, 0px, 0px);">Design</span> <span
-                                    class="_1JTSiQ _2JC1Dv" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">Project</span>
-                                <span class="_1JTSiQ _2JC1Dv"
-                                      style="opacity: 1; transform: translate3d(0px, 0px, 0px);">and</span> <span
-                                    class="_1JTSiQ _2JC1Dv" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">The</span>
-                                <span class="_1JTSiQ _2JC1Dv"
-                                      style="opacity: 1; transform: translate3d(0px, 0px, 0px);">Author's</span> <span
-                                    class="_1JTSiQ _2JC1Dv" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">Supervision</span>
-                            </h2></div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"><h2 class="p_h" aria-label="The Extra O collection is now available!"
-                                                    role="text"
-                                                    style="font-family: SangbleuSans; font-weight: 100; font-style: normal;">
-                                <span class="_1JTSiQ _2JC1Dv">50 $/м²</span></h2></div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"></div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"><span class="_3YaNEc"
-                                                      style="color: #bebebe;">Design concept development</span></div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"><span class="_3YaNEc"
-                                                      style="color: #bebebe;">Technical documentation</span></div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"><span class="_3YaNEc" style="color: #bebebe;">3D visualization</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"><span class="_3YaNEc" style="color: #bebebe;">Author's control</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"><span class="_3YaNEc"></span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column _1nm3QC _17Eg-h _3_OQIt" style="display: inline-block; padding-bottom: 15%;">
-                <div class="_3SkoF_">
-                    <div class="f_WNzv">
-                        <div class="_1GWVjt">
-                            <div><h2 class="p_h" aria-label="The Extra O collection is now available!" role="text"
-                                     style="font-family: SangbleuSans; font-weight: 300; font-style: normal;color: #bebebe;">
-                                <span class="_1JTSiQ _2JC1Dv"
-                                      style="opacity: 1; transform: translate3d(0px, 0px, 0px);">Entire</span> <span
-                                    class="_1JTSiQ _2JC1Dv" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">Project</span>
-                                <span class="_1JTSiQ _2JC1Dv"
-                                      style="opacity: 1; transform: translate3d(0px, 0px, 0px);">Implementation</span>
-                            </h2></div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"><h2 class="p_h" aria-label="The Extra O collection is now available!"
-                                                    role="text"
-                                                    style="font-family: SangbleuSans; font-weight: 100; font-style: normal;">
-                                <span class="_1JTSiQ _2JC1Dv">starting from 150 $/м²</span></h2></div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"></div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"><span class="_3YaNEc"
-                                                      style="color: #bebebe;">Design concept development</span></div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"><span class="_3YaNEc"
-                                                      style="color: #bebebe;">Technical documentation</span></div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"><span class="_3YaNEc" style="color: #bebebe;">3D visualization</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"><span class="_3YaNEc"
-                                                      style="color: #bebebe;">Project implementation</span></div>
-                        </div>
-                    </div>
-                    <div class="_1wtF0C">
-                        <div class="_1KJRzr">
-                            <div class="VlVgP-"><span class="_3YaNEc" style="color: #bebebe;">Author's control</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <div style="background-color: #181818; color: rgb(255, 255, 255);">
             <div class="_1nm3QC _17Eg-h _3_OQIt">
@@ -10784,18 +10673,76 @@
                 </div>
             </div>
         </div>
-        <div class="BzRHT8 _3bAxQ5">
-            <button id="st" style="margin: auto;">
-                <svg class="_3DxPfO" viewBox="0 0 28 28">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M0.700195 14L3.02769 16.3275L12.3377 7.01755L12.3377 27.3L15.6627 27.3L15.6627 7.01755L24.9727 16.3275L27.3002 14L14.0002 0.70005L0.700195 14Z"></path>
-                </svg>
-                <span class="screen-reader-only">Back to the top of the page</span></button>
-        </div>
-        <div class="_1nm3QC _17Eg-h _3_OQIt" style="color: rgb(255, 255, 255);">©2021 Montago Design</div>
     </main>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__sep"></div>
+            <div class="row">
+                <div class="col-md-4 col-lg-3 order-lg-2">
+                    <div class="footer__copyright">© 2021 Montago Design</div>
+                </div>
+                <div class="col-md-4 col-lg-3 order-lg-3">
+                    <ul class="footer__links-list list-unstyled">
+                        <li>
+                            <a href="https://www.instagram.com/montago.design/" target="_blank"
+                               rel="nofollow noopener noreferrer">
+                                Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/mdesignkyiv" target="_blank" rel="nofollow noopener noreferrer">
+                                Telegram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://msng.link/o/?380680636810=vi" target="_blank"
+                               rel="nofollow noopener noreferrer">
+                                Viber
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/380680636810" target="_blank" rel="nofollow noopener noreferrer">
+                                WhatsApp
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/montago.design" target="_blank"
+                               rel="nofollow noopener noreferrer">
+                                Facebook
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3 order-lg-4">
+                    <ul class="footer__links-list list-unstyled">
+                        <div class="_3bAxQ5">
+                            <button id="st" style="margin: auto;">
+                                <svg class="_3DxPfO" viewBox="0 0 28 28">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M0.700195 14L3.02769 16.3275L12.3377 7.01755L12.3377 27.3L15.6627 27.3L15.6627 7.01755L24.9727 16.3275L27.3002 14L14.0002 0.70005L0.700195 14Z"></path>
+                                </svg>
+                                <span class="screen-reader-only">Back to the top of the page</span></button>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-lg-3 order-lg-1">
+                    <ul class="footer__links-list list-unstyled">
+                        <li>
+                            Kyiv:
+                            <a href="tel:+380680636810">+380 68 063 6810</a>
+                        </li>
+                        <li>
+                            <a href="mailto:mail@igorsirotov.com">mdesignkyiv@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>setTimeout(function () {$('.preloader').fadeToggle(5000,'linear');}, 0);</script>
+<script>setTimeout(function () {
+    $('.preloader').fadeToggle(5000, 'linear');
+}, 0);</script>
 </body>
 </html>
