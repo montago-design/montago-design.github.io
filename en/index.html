@@ -10,6 +10,29 @@
     <meta name="description" content="Montago Design is Ukrainian interior design company.">
     <title>Montago Design</title>
     <style>
+        .footer__row {
+            justify-content: center;
+        }
+        .s-logo:hover {
+            color: #7bf2da;
+        }
+        .s-logo {
+            color: #E7E7E7;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .s-footer {
+            font-size: .875rem;
+            position: relative;
+            background-color: #1c1c1c;
+            padding: 15px 0 12px;
+            z-index: 4;
+            display: block;
+            unicode-bidi: isolate;
+        }
+
         .dropbtn {
             color: white;
             border: none;
@@ -25,7 +48,7 @@
             position: absolute;
             z-index: 999;
             left: 0;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         }
 
         .dropdown-content a {
@@ -33,7 +56,14 @@
             display: block;
         }
 
-        .dropdown:hover .dropdown-content {display: block;}
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .-al-child {
+            color: #bebebe;
+            font-size: 0.925rem;
+        }
 
         .preloader {
             position: fixed;
@@ -76,45 +106,20 @@
             pointer-events: none
         }
 
-        .BzRHT8 {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: justify;
-            -webkit-justify-content: space-between;
-            justify-content: space-between;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -webkit-flex-direction: column;
-            flex-direction: column
-        }
-
-        .BzRHT8, .BzRHT8:first-child {
-            -webkit-box-align: start;
-            -webkit-align-items: flex-start;
-            align-items: flex-start
-        }
-
-        .BzRHT8:first-child {
-            padding: 0 0 16.66667vw
-        }
-
-        @media only screen and (min-width: 1024px) {
-            .BzRHT8:first-child {
-                padding: 0 0 13.88889vw
-            }
-        }
-
-        @media only screen and (min-width: 1024px) {
-            .BzRHT8 {
-                -webkit-box-align: end;
-                -webkit-align-items: flex-end;
-                align-items: flex-end;
-                -webkit-box-orient: horizontal;
-                -webkit-box-direction: normal;
-                -webkit-flex-direction: row;
-                flex-direction: row
-            }
+        ._192GJx {
+            font-size: 13px;
+            font-size: .8666666667vw;
+            font-family: GillSans, Helvetica, Arial, sans-serif;
+            line-height: 1em;
+            -webkit-font-feature-settings: "ss01";
+            -moz-font-feature-settings: "ss01";
+            font-feature-settings: "ss01";
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1.2em;
+            letter-spacing: .06em;
+            padding-left: 5.5555555556vw;
+            padding-right: 5.5555555556vw;
         }
 
         ._2WEdPG {
@@ -2213,13 +2218,13 @@
         }
 
         @media (max-width: 1500px) {
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 12px
             }
         }
 
         @media only screen and (min-width: 1024px) {
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 14px;
                 font-size: .93333vw;
                 margin-bottom: 2.77778vw
@@ -2227,7 +2232,7 @@
         }
 
         @media only screen and (min-width: 1024px) and (max-width: 1500px) {
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 14px
             }
         }
@@ -8657,6 +8662,10 @@
                 padding: 30px .625rem 0;
                 text-align: center
             }
+
+            .-al-child {
+                font-size: 0.9525rem;
+            }
         }
 
         .accordion__item-title {
@@ -8696,7 +8705,7 @@
             width: 24px;
             height: 24px;
             transition: transform .3s ease;
-            background: url(../images/1.svg) 0 0 no-repeat
+            background: url('../images/1.svg') 0 0 no-repeat
         }
 
         @media (min-width: 768px) {
@@ -8809,7 +8818,7 @@
                 font-size: 8.53333vw;
             }
 
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 26px;
             }
 
@@ -8819,6 +8828,10 @@
 
             .algorithm__item-text {
                 font-size: 12px;
+            }
+
+            .-al-child {
+                font-size: 0.9525rem;
             }
 
             .accordion__item-title_arrow_left {
@@ -8865,7 +8878,7 @@
                 font-size: 8.53333vw;
             }
 
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 26px;
             }
 
@@ -8875,6 +8888,10 @@
 
             .algorithm__item-text {
                 font-size: 12px;
+            }
+
+            .-al-child {
+                font-size: 0.9525rem;
             }
 
             .accordion__item-title_arrow_left {
@@ -8921,7 +8938,7 @@
                 font-size: 8.53333vw;
             }
 
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 26px;
             }
 
@@ -8931,6 +8948,10 @@
 
             .algorithm__item-text {
                 font-size: 12px;
+            }
+
+            .-al-child {
+                font-size: 0.9525rem;
             }
 
             .accordion__item-title_arrow_left {
@@ -8977,7 +8998,7 @@
                 font-size: 8.53333vw;
             }
 
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 26px;
             }
 
@@ -8987,6 +9008,10 @@
 
             .algorithm__item-text {
                 font-size: 12px;
+            }
+
+            .-al-child {
+                font-size: 0.9525rem;
             }
 
             .accordion__item-title_arrow_left {
@@ -9033,7 +9058,7 @@
                 font-size: 8.53333vw;
             }
 
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 26px;
             }
 
@@ -9043,6 +9068,10 @@
 
             .algorithm__item-text {
                 font-size: 12px;
+            }
+
+            .-al-child {
+                font-size: 0.9525rem;
             }
 
             .accordion__item-title_arrow_left {
@@ -9095,7 +9124,7 @@
                 font-size: 10.53333vw;
             }
 
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 26px;
             }
 
@@ -9104,7 +9133,15 @@
             }
 
             .algorithm__item-text {
-                font-size: 18px;
+                font-size: 25px;
+            }
+
+            .-al-child {
+                font-size: 0.9525rem;
+            }
+
+            .-al-child {
+                font-size: 0.9525rem;
             }
 
             .accordion__item-title_arrow_left {
@@ -9162,7 +9199,7 @@
                 font-size: 8.53333vw;
             }
 
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 26px;
             }
 
@@ -9171,7 +9208,7 @@
             }
 
             .algorithm__item-text {
-                font-size: 12px;
+                font-size: 18px;
             }
 
             .accordion__item-title_arrow_left {
@@ -9218,7 +9255,7 @@
                 font-size: 8.53333vw;
             }
 
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 26px;
             }
 
@@ -9228,6 +9265,10 @@
 
             .algorithm__item-text {
                 font-size: 12px;
+            }
+
+            .-al-child {
+                font-size: 0.9525rem;
             }
 
             .accordion__item-title_arrow_left {
@@ -9273,7 +9314,7 @@
                 font-size: 8.53333vw;
             }
 
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 26px;
             }
 
@@ -9283,6 +9324,10 @@
 
             .algorithm__item-text {
                 font-size: 12px;
+            }
+
+            .-al-child {
+                font-size: 0.9525rem;
             }
 
             .accordion__item-title_arrow_left {
@@ -9329,7 +9374,7 @@
                 font-size: 8.53333vw;
             }
 
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 26px;
             }
 
@@ -9339,6 +9384,10 @@
 
             .algorithm__item-text {
                 font-size: 12px;
+            }
+
+            .-al-child {
+                font-size: 0.9525rem;
             }
 
             .accordion__item-title_arrow_left {
@@ -9384,7 +9433,7 @@
                 font-size: 8.53333vw;
             }
 
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 26px;
             }
 
@@ -9394,6 +9443,10 @@
 
             .algorithm__item-text {
                 font-size: 12px;
+            }
+
+            .-al-child {
+                font-size: 0.9525rem;
             }
 
             .accordion__item-title_arrow_left {
@@ -9439,7 +9492,7 @@
                 font-size: 8.53333vw;
             }
 
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 26px;
             }
 
@@ -9449,6 +9502,10 @@
 
             .algorithm__item-text {
                 font-size: 12px;
+            }
+
+            .-al-child {
+                font-size: 0.9525rem;
             }
 
             .accordion__item-title_arrow_left {
@@ -9501,7 +9558,7 @@
                 font-size: 8.53333vw;
             }
 
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 26px;
             }
 
@@ -9511,6 +9568,10 @@
 
             .algorithm__item-text {
                 font-size: 12px;
+            }
+
+            .-al-child {
+                font-size: 0.9525rem;
             }
 
             .accordion__item-title_arrow_left {
@@ -9556,7 +9617,7 @@
                 font-size: 8.53333vw;
             }
 
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 26px;
             }
 
@@ -9566,6 +9627,10 @@
 
             .algorithm__item-text {
                 font-size: 12px;
+            }
+
+            .-al-child {
+                font-size: 0.9525rem;
             }
 
             .accordion__item-title_arrow_left {
@@ -9612,7 +9677,7 @@
                 font-size: 8.53333vw;
             }
 
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 26px;
             }
 
@@ -9622,6 +9687,10 @@
 
             .algorithm__item-text {
                 font-size: 12px;
+            }
+
+            .-al-child {
+                font-size: 0.9525rem;
             }
 
             .accordion__item-title_arrow_left {
@@ -9667,7 +9736,7 @@
                 font-size: 8.53333vw;
             }
 
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 26px;
             }
 
@@ -9677,6 +9746,10 @@
 
             .algorithm__item-text {
                 font-size: 12px;
+            }
+
+            .-al-child {
+                font-size: 0.9525rem;
             }
 
             .accordion__item-title_arrow_left {
@@ -9723,7 +9796,7 @@
                 font-size: 8.53333vw;
             }
 
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 26px;
             }
 
@@ -9733,6 +9806,10 @@
 
             .algorithm__item-text {
                 font-size: 12px;
+            }
+
+            .-al-child {
+                font-size: 0.9525rem;
             }
 
             .accordion__item-title_arrow_left {
@@ -9778,7 +9855,7 @@
                 font-size: 8.53333vw;
             }
 
-            ._2_8ttU {
+            ._2_8ttU, ._192GJx {
                 font-size: 26px;
             }
 
@@ -9788,6 +9865,10 @@
 
             .algorithm__item-text {
                 font-size: 12px;
+            }
+
+            .-al-child {
+                font-size: 0.9525rem;
             }
 
             .accordion__item-title_arrow_left {
@@ -10071,6 +10152,7 @@
                 text-align: left
             }
         }
+
     </style>
 </head>
 <body>
@@ -10572,33 +10654,33 @@
                         <div class="algorithm__items-wrap">
                             <div class="algorithm__item">
                                 <div class="algorithm__item-num">1</div>
-                                <div class="algorithm__item-text" style="color: #bebebe;">Design request.<br>
-                                    Apartment and layout measurement.
+                                <div class="algorithm__item-text jIhDXU">- Design request -<br>
+                                    <div class="-al-child">Apartment and layout measurement.</div>
                                 </div>
                             </div>
                             <div class="algorithm__item">
                                 <div class="algorithm__item-num">2</div>
-                                <div class="algorithm__item-text" style="color: #bebebe;">Concept.<br>Design development
-                                    (up to 4 options).
+                                <div class="algorithm__item-text jIhDXU">- Concept -<br><div class="-al-child">Design development
+                                    (up to 4 options).</div>
                                 </div>
                             </div>
                             <div class="algorithm__item">
                                 <div class="algorithm__item-num">3</div>
-                                <div class="algorithm__item-text" style="color: #bebebe;">Visualization. <br>Up to 3
-                                    options.
+                                <div class="algorithm__item-text jIhDXU">- Visualization -<br><div class="-al-child">Up to 3
+                                    options.</div>
                                 </div>
                             </div>
                             <div class="algorithm__item">
                                 <div class="algorithm__item-num">4</div>
-                                <div class="algorithm__item-text" style="color: #bebebe;">Documentation. <br>Full
+                                <div class="algorithm__item-text jIhDXU">- Documentation -<br><div class="-al-child">Full
                                     working
-                                    documentation creation.
+                                    documentation creation.</div>
                                 </div>
                             </div>
                             <div class="algorithm__item">
                                 <div class="algorithm__item-num">5</div>
-                                <div class="algorithm__item-text" style="color: #bebebe;">Issuing design album with 3d
-                                    visualization and working documentation.
+                                <div class="algorithm__item-text jIhDXU">- Release -<br><div class="-al-child">Issuing design album with 3d
+                                    visualization and working documentation.</div>
                                 </div>
                             </div>
                         </div>
@@ -10960,6 +11042,22 @@
             </div>
         </div>
     </div>
+    <footer class="s-footer">
+        <div class="container">
+            <div class="row footer__row">
+                <div class="col-xs-12 col-md-9 col-sm-8 footer-locations">
+                    <div class="footer-logo-wrap" style="color: #929292"> Designed & Developed By
+                        <a aria-label="логотип" target=”_blank” class="s-logo" href="https://soutsob.com.ua" rel="home"
+                           title="SOUTSOB" style="">SOUTSOB
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#E7E7E7" viewBox="0 0 256 256">
+                                <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm40,120a8,8,0,0,1-16,0V115.31l-50.34,50.35a8,8,0,0,1-11.32-11.32L140.69,104H112a8,8,0,0,1,0-16h48a8,8,0,0,1,8,8Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>setTimeout(function () {
